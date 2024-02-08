@@ -1,0 +1,9 @@
+def sum_of_digits(number):
+    total = 0
+    for digit in str(number):
+        total += int(digit)
+    return total
+
+number = int(input("Введите положительное число: "))
+total_sum = sum_of_digits(number)
+print(f"Сумма цифр числа: {total_sum}")
